@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+   
+  }
+  
+  nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  section {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  section h2 {
+    margin-top: 0;
+  }
+  
+  nav {
+    display: flex; /* This makes the nav element a flex container */
+    justify-content: center; /* This centers the child elements horizontally within the nav element */
+  }
+  
+  section {
+    display: flex; /* This makes the section element a flex container */
+    flex-direction: column; /* This makes the child elements stack vertically */
+    align-items: center; /* This centers the child elements vertically within the section element */
+  }
+  
+  .photo-frame {
+    display: inline-block; /* This makes the photo frames display as inline-block elements */
+    margin: 10px; /* This adds a margin around each photo frame */
+    position: relative; /* This allows you to position elements within the photo frame */
+  }
+  
+  .photo-frame img {
+    width: 100%; /* This makes the images fill the entire photo frame */ 
+    }
+    
+    .photos-container {
+      display: flex; /* This makes the photos-container a flex container */
+      justify-content: center; /* This centers the child elements horizontally within the photos-container */
+      align-items: center; /* This aligns the child elements vertically in the center of the container */
+    }
+    
+    .photos-container .photo-frame {
+      position: relative; /* This allows you to position elements relative to the photo-frame */
+    }
+    
+    .photos-container .photo-frame::before, .photos-container .photo-frame::after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left:0px;
+      right: 0px;
+      border:  10px solid rgb(115, 117, 117);
+    }
+   
+    
+    .contact-images {
+      display: flex; /* This makes the contact-images a flex container */
+      justify-content: center; /* This centers the child elements horizontally within the contact-images */
+      
+    }
+    .contact-images img {
+      width: 80px; /* This sets the width of the images to 150px */
+      height:80px; /* This sets the height of the images to 150px */
+    }
+   
+   
